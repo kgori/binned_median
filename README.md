@@ -12,3 +12,11 @@ Usage:
     samtools depth -a BAM | cut -f3 | binned_median
 
 
+Build instructions:
+
+    git clone https://github.com/kgori/binned_median.git
+    cd binned_median
+    cmake -B build_folder -S .
+    cmake --build build_folder
+    cmake --install build_folder [--prefix install_folder]
+
